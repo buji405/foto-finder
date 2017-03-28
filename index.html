@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="reset.css">
     <link type="text/css" rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet">
     <meta charset="utf-8">
@@ -8,20 +9,27 @@
   </head>
   <body>
     <header>
-      <h1>FOTO<img class="logo" src="/Users/christielynam/turing/mod1/foto-finder/photos/foto-finder-logo.svg" alt="Foto Finder Logo">FINDER</h1>
-      <h2>Title</h2>
-        <input class="input-field" type="text" name="title" label="Title" />
-      <h2>Caption</h2>
-        <input class="input-field" type="text" name="caption" label="Caption" />
-        <input type="file" name="file" id="file" class="inputfile" />
-        <label for="file">Choose File</label>
+      <h1>FOTO</h1>
+      <img class="logo" src="photos/foto-finder-logo.svg" alt="Foto Finder Logo">
+      <h1>FINDER</h1>
     </header>
-    <main>
-      <article class="">
+    <section class="top-container">
+      <section class="input-container">
+      <label for="title">Title</label>
+      <input class="title-input" id="title" type="text" name="title" />
+      <label for="caption">Caption</label>
+      <input class="caption-input" id="caption" type="text" name="caption" />
+        <div class="buttons">
+          <label class="choose-file button" for="file">Choose File</label>
+          <input type="file" name="file" id="file" class="upload-photo" />
+          <button class="save-button button">Save</button>
+        </div>
+      </section>
+    </section>
+    <section class="card-container">
 
-      </article>
+    </section>
 
-    </main>
 
   </body>
 </html>
