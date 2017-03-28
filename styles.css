@@ -90,7 +90,62 @@ label {
   background: #938284;
 }
 
-.card-container {
-  height: 500px;
+.album {
+  height: 100vh;
   background-color: #C2B2B4;
+  padding-top: 40px;
+  margin: auto;
+}
+
+.card {
+  display: inline-block;
+  width: 195px;
+  height: 280px;
+  background-color: #FFF;
+  border: 2px solid #938284;
+  color: #3E2A35;
+  margin: 0 50px;
+}
+
+.card-title {
+  height: 35px;
+  padding: 10px;
+}
+
+.photo {
+  height: 120px;
+  background: url("photos/dog2-sq.jpg") no-repeat;
+}
+
+.photo-caption {
+  height: 80px;
+  padding: 10px;
+}
+
+.icon-container {
+  height: 45px;
+  padding: 10px;
+  background-color: #5B4447;
+}
+
+.delete {
+  background: url("photos/delete.svg") no-repeat;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.favorite {
+  background: url("photos/favorite.svg") no-repeat;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  float: right;
+  border: none;
+}
+
+.card-container {
+  width: 90%;
+  margin: auto;
 }
