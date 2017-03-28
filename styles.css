@@ -94,6 +94,11 @@ label {
   background: #938284;
 }
 
-main {
+/*main {
+  background-color: #C2B2B4;
+}*/
+
+.card-container {
+  height: 500px;
   background-color: #C2B2B4;
 }
