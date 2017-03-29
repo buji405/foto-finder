@@ -44,6 +44,28 @@ function prependCard(newCard) {
   )
 }
 
+$('.title-input').on('input', enableAddButton);
+$('.caption-input').on('input', enableAddButton);
+$('.upload-photo').on('change', enableAddButton);
+
+function enableAddButton() {
+  console.log('input detected');
+  var $title = $('.title-input').val();
+  var $caption = $('.caption-input').val();
+  var $filename = $('.upload-photo').val();
+  if ($title !== '' && $caption !== '' && $filename !== '') {
+    toggleSaveDisable();
+  }
+}
+
+function toggleSaveDisable() {
+  var $disabled = $('.add-button').prop('disabled');
+  if ($disabled) {
+    $('.add-button').prop('disabled', false);
+  } else {
+    $('.add-button').prop('disabled', true);
+  }
+}
 
 
 
