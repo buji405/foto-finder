@@ -48,7 +48,6 @@ function prependCard(newCard) {
 
 
 
-
 /*
 	By Osvaldas Valutis, www.osvaldas.info
 	Available for use under the MIT License
@@ -85,3 +84,12 @@ function prependCard(newCard) {
 		.on( 'blur', function(){ $input.removeClass( 'has-focus' ); });
 	});
 })( jQuery, window, document );
+
+$('.card-container').on('click', '.delete', function() {
+  $(this).parents('.card').remove();
+})
+
+$('.card-container').on('click', '.favorite', function() {
+  $(this).parent().parent().toggleClass('liked');
+  $(this).toggleClass('favorite-active');
+})
