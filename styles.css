@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -66,13 +67,21 @@ label {
 	z-index: -1;
 }
 
+.upload-photo:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.upload-photo + label * {
+	pointer-events: none;
+}
+
 .input-container {
   width: 50%;
   margin: 0 auto;
 }
 
-.add-button,
-.choose-file {
+.style-button {
   background: #5B4447;
   color: #fff;
   padding: 15px 30px;
@@ -84,14 +93,12 @@ label {
   letter-spacing: 1px;
 }
 
-.add-button:hover,
-.choose-file:hover {
+.style-button:hover {
   cursor: pointer;
   background: #938284;
 }
 
 .album {
-  height: 100vh;
   background-color: #C2B2B4;
   padding-top: 40px;
   margin: auto;
@@ -104,7 +111,7 @@ label {
   background-color: #FFF;
   border: 2px solid #938284;
   color: #3E2A35;
-  margin: 0 50px;
+  margin: 0 50px 30px;
 }
 
 .card-title {
@@ -114,7 +121,7 @@ label {
 
 .photo {
   height: 120px;
-  background: url("photos/dog2-sq.jpg") no-repeat;
+  width: 191px;
 }
 
 .photo-caption {
@@ -124,7 +131,7 @@ label {
 
 .icon-container {
   height: 45px;
-  padding: 10px;
+  padding: 8px;
   background-color: #5B4447;
 }
 

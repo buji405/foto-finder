@@ -20,9 +20,9 @@
       <label for="caption">Caption</label>
       <input class="caption-input" id="caption" type="text" name="caption" />
         <div class="buttons">
-          <label class="choose-file button" for="file">Choose File</label>
-          <input type="file" name="file" id="file" class="upload-photo" />
-          <button class="add-button button">Add to Album</button>
+          <label for="pick-file" class="choose-file style-button">Choose File</label>
+          <input id="pick-file" class="upload-photo style-button" type="file" name="file" data-multiple-caption="{count} files selected" multiple>
+          <button class="add-button style-button">Add to Album</button>
         </div>
       </section>
     </section>
@@ -30,7 +30,7 @@
       <div class="card-container">
       <article class="card">
         <h3 class="card-title">Image Title</h3>
-        <div class="photo">Photo</div>
+        <img class="photo" src="" alt="">
         <p class="photo-caption">Image caption</p>
         <div class="icon-container">
           <button class="delete" type="button" name="button"></button>
