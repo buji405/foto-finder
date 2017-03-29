@@ -145,7 +145,15 @@ label {
   border: none;
 }
 
+.favorite-active {
+  background: url("photos/favorite-active.svg") no-repeat;
+}
+
 .card-container {
   width: 90%;
   margin: auto;
+}
+
+.liked {
+  background-color: #E26D5A;
 }

@@ -29,10 +29,11 @@ function prependCard() {
   )
 }
 
-// $('.delete').on('click', function () {
-//   $('.card-container').remove('.card');
-// })
-
 $('.card-container').on('click', '.delete', function() {
-  $('.card').remove();
+  $(this).parents('.card').remove();
+})
+
+$('.card-container').on('click', '.favorite', function() {
+  $(this).parent().parent().toggleClass('liked');
+  $(this).toggleClass('favorite-active');
 })
