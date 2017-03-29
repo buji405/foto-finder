@@ -102,6 +102,17 @@ label {
   background-color: #C2B2B4;
   padding-top: 40px;
   margin: auto;
+  height: 100vh;
+}
+
+.add-photo {
+  font-size: 100px;
+  color: #3E2A35;
+}
+
+.add-button:disabled {
+  background: #a6abad;
+  cursor: default;
 }
 
 .card {
@@ -177,4 +188,5 @@ label {
 }
 
 .liked {
-  background-color: #D3D3D3;
+  /*background-color: #D3D3D3;*/
+  background: #E26D5A;
