@@ -115,8 +115,13 @@ label {
 }
 
 .card-title {
+  width: 195px;
   height: 35px;
   padding: 10px;
+  word-wrap: break-word;
+  overflow: scroll;
+  line-height: 20px;
+  font-size: 14px;
 }
 
 .photo {
@@ -125,8 +130,13 @@ label {
 }
 
 .photo-caption {
+  width: 195px;
   height: 80px;
   padding: 10px;
+  word-wrap: break-word;
+  overflow: scroll;
+  line-height: 20px;
+  font-size: 14px;
 }
 
 .icon-container {
@@ -143,6 +153,10 @@ label {
   border: none;
 }
 
+.delete:hover {
+  background: url("photos/delete-active.svg") no-repeat;
+}
+
 .favorite {
   background: url("photos/favorite.svg") no-repeat;
   width: 30px;
@@ -152,6 +166,7 @@ label {
   border: none;
 }
 
+.favorite:hover,
 .favorite-active {
   background: url("photos/favorite-active.svg") no-repeat;
 }
