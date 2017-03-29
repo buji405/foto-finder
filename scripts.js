@@ -6,6 +6,7 @@ $('.add-button').on('click', function() {
   var $newCard = new PhotoCard($title, $caption, $filepath);
   prependCard($newCard);
   clearInputFields();
+  $('.add-photo').text('')
 })
 
 function clearInputFields() {

@@ -102,6 +102,12 @@ label {
   background-color: #C2B2B4;
   padding-top: 40px;
   margin: auto;
+  height: 100vh;
+}
+
+.add-photo {
+  font-size: 100px;
+  color: #3E2A35;
 }
 
 .card {
