@@ -84,7 +84,7 @@ label {
   letter-spacing: 1px;
 }
 
-.save-button:hover,
+.add-button:hover,
 .choose-file:hover {
   cursor: pointer;
   background: #938284;
