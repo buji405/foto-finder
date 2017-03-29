@@ -4,8 +4,17 @@ $('.add-button').on('click', function() {
   var $filepath= realPath($('.upload-photo').val());
   console.log($filepath);
   var $newCard = new PhotoCard($title, $caption, $filepath);
-  prependCard($newCard)
+  prependCard($newCard);
+  clearInputFields();
 })
+
+function clearInputFields() {
+  var $title = $('.title-input');
+  var $caption = $('.caption-input');
+  $title.val('');
+  $caption.val('');
+}
+
 
 function realPath(filepath) {
   return filepath.split('\\').pop();
