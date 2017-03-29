@@ -112,8 +112,8 @@ label {
 }
 
 .add-button:disabled {
-  background: #a6abad;
-  cursor: default;
+  /*background: #a6abad;*/
+  cursor: not-allowed;;
 }
 
 .card {
