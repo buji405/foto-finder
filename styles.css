@@ -108,6 +108,7 @@ label {
 .add-photo {
   font-size: 100px;
   color: #3E2A35;
+  text-align: center;
 }
 
 .add-button:disabled {
