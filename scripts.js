@@ -28,3 +28,11 @@ function prependCard() {
     </article>`
   )
 }
+
+// $('.delete').on('click', function () {
+//   $('.card-container').remove('.card');
+// })
+
+$('.card-container').on('click', '.delete', function() {
+  $('.card').remove();
+})
