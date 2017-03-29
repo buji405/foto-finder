@@ -16,7 +16,6 @@ function clearInputFields() {
   $caption.val('');
 }
 
-
 function realPath(filepath) {
   return filepath.split('\\').pop();
 }
