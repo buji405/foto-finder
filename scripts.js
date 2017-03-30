@@ -11,8 +11,10 @@ $('.add-button').on('click', function() {
 function clearInputFields() {
   var $title = $('.title-input');
   var $caption = $('.caption-input');
+  var $filepath =  $('.upload-photo');
   $title.val('');
   $caption.val('');
+  $filepath.val('');
   toggleSaveDisable();
 }
 
