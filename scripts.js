@@ -5,7 +5,7 @@ $('.add-button').on('click', function() {
   var $newCard = new PhotoCard($title, $caption, $filepath);
   prependCard($newCard);
   clearInputFields();
-  $('.add-photo').text('')
+  $('.add-photo').text('');
 })
 
 function clearInputFields() {
@@ -13,6 +13,7 @@ function clearInputFields() {
   var $caption = $('.caption-input');
   $title.val('');
   $caption.val('');
+  toggleSaveDisable();
 }
 
 function realPath(filepath) {

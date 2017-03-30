@@ -102,10 +102,11 @@ label {
   background-color: #C2B2B4;
   padding-top: 40px;
   margin: auto;
-  height: 100vh;
+  min-height: 500px;
 }
 
 .add-photo {
+  display: block;
   font-size: 100px;
   color: #3E2A35;
   text-align: center;
@@ -113,16 +114,17 @@ label {
 
 .add-button:disabled {
   cursor: not-allowed;
+  background: hsla(327, 19%, 30%, 1)
 }
 
 .card {
   display: inline-block;
-  width: 195px;
+  width: 24%;
   height: 280px;
   background-color: #FFF;
   border: 2px solid #938284;
   color: #3E2A35;
-  margin: 0 50px 30px;
+  margin: 0 5px 40px;
 }
 
 .card-title {
@@ -137,7 +139,7 @@ label {
 
 .photo {
   height: 120px;
-  width: 191px;
+  width: 100%;
 }
 
 .photo-caption {
@@ -183,10 +185,36 @@ label {
 }
 
 .card-container {
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .liked {
   background: #E26D5A;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 30%;
+    margin-left: 20px;
+  }
+
+  .input-container {
+    width: 70%;
+  }
+
+  .style-button {
+    width: 280px;
+  }
+
+}
+
+@media screen and (max-width: 860px) {
+  .style-button {
+    width: 250px;
+  }
+
 }
