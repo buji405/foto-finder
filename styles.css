@@ -9,24 +9,24 @@ body {
 }
 
 header {
-  text-align: center;
-  background-color: #3E2A35;
   padding: 30px 0;
+  background-color: #3E2A35;
+  text-align: center;
 }
 
 .top-container {
-  background-color: #3E2A35;
-  height: 350px;
   width: 100%;
+  height: 350px;
+  background-color: #3E2A35;
 }
 
 h1 {
   display: inline-block;
   color: #FFF;
   font-size: 70px;
+  font-weight: 800;
   text-align: center;
   letter-spacing: 3px;
-  font-weight: 800;
 }
 
 .logo {
@@ -35,36 +35,36 @@ h1 {
 }
 
 label {
-  color: #C2B2B4;
   margin-left: 1%;
+  color: #C2B2B4;
 }
 
 .title-input,
 .caption-input {
+  display: block;
   width: 98%;
   height: 40px;
-  display: block;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
 .add-button {
+  float: right;
+  box-sizing: border-box;
+  margin-right: 1%;
   border: none;
   font-size: 16px;
-  box-sizing: border-box;
   font-weight: 600;
-  margin-right: 1%;
-  float: right;
 }
 
 .upload-photo {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
 	width: 0.1px;
 	height: 0.1px;
 	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
 }
 
 .upload-photo:focus + label {
@@ -82,13 +82,13 @@ label {
 }
 
 .style-button {
-  background: #5B4447;
-  color: #fff;
-  padding: 15px 30px;
-  margin-top: 15px;
   display: inline-block;
   width: 225px;
   height: 50px;
+  padding: 15px 30px;
+  margin-top: 15px;
+  background: #5B4447;
+  color: #fff;
   text-align: center;
   letter-spacing: 1px;
 }
@@ -99,57 +99,56 @@ label {
 }
 
 .album {
-  background-color: #C2B2B4;
+  min-height: 500px;
   padding-top: 40px;
   margin: auto;
-  min-height: 500px;
+  background-color: #C2B2B4;
 }
 
 .add-photo {
   display: block;
-  font-size: 100px;
   color: #3E2A35;
+  font-size: 100px;
   text-align: center;
 }
 
 .add-button:disabled {
   cursor: not-allowed;
-  background: hsla(327, 19%, 30%, 1)
+  background: hsla(327, 19%, 30%, 1);
 }
 
 .card {
   display: inline-block;
   width: 24%;
   height: 280px;
-  background-color: #FFF;
   border: 2px solid #938284;
-  color: #3E2A35;
   margin: 0 5px 40px;
+  background-color: #FFF;
+  color: #3E2A35;
 }
 
 .card-title {
   width: 195px;
   height: 35px;
   padding: 10px;
+  font-size: 14px;
   word-wrap: break-word;
   overflow: scroll;
   line-height: 20px;
-  font-size: 14px;
 }
 
 .photo {
-  height: 120px;
   width: 100%;
+  height: 120px;
 }
 
 .photo-caption {
-  width: 195px;
   height: 80px;
   padding: 10px;
+  font-size: 14px;
   word-wrap: break-word;
   overflow: scroll;
   line-height: 20px;
-  font-size: 14px;
 }
 
 .icon-container {
@@ -159,11 +158,11 @@ label {
 }
 
 .delete {
-  background: url("photos/delete.svg") no-repeat;
   width: 30px;
   height: 30px;
-  margin-bottom: 10px;
   border: none;
+  margin-bottom: 10px;
+  background: url("photos/delete.svg") no-repeat;
 }
 
 .delete:hover {
@@ -171,12 +170,12 @@ label {
 }
 
 .favorite {
-  background: url("photos/favorite.svg") no-repeat;
+  float: right;
   width: 30px;
   height: 30px;
-  margin-bottom: 10px;
-  float: right;
   border: none;
+  margin-bottom: 10px;
+  background: url("photos/favorite.svg") no-repeat;
 }
 
 .favorite:hover,
@@ -186,8 +185,8 @@ label {
 
 .card-container {
   width: 100%;
-  margin: 0 auto;
   max-width: 1000px;
+  margin: 0 auto;
 }
 
 .liked {
@@ -209,12 +208,82 @@ label {
   .style-button {
     width: 280px;
   }
-
 }
 
 @media screen and (max-width: 860px) {
   .style-button {
     width: 250px;
   }
+}
 
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .style-button {
+    width: 225px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+  .style-button {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .style-button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  label {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .add-photo {
+    font-size: 75px;
+  }
 }
